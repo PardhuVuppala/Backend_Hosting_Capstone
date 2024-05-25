@@ -15,7 +15,7 @@ app.use(cors(
 ))
 app.use(express.json());
 
-const my_mongoose = require('./db');
+const my_mongoose = require('./db.js');
 const userApi = require('./controllers/user_controller_api')
 const contApi = require('./controllers/container_api');
 const ownerAPI = require('./controllers/owner_api');
