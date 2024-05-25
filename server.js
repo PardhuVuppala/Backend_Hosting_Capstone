@@ -29,4 +29,9 @@ app.use('/Booking',BookingContainer)
 app.use('/Notification',NotificationApi)
 app.use('/payment',PaymentApi)
 
+app.get("/",(req,res)=>
+    {
+        res.json("Hello")
+    })
+
 app.listen(4500, () => console.log('EXPRESS Server Started at Port No: 4500 '));
