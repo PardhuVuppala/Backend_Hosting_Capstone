@@ -8,9 +8,7 @@ app.use(cors())
 app.use(express.urlencoded({ extended: false }));
 app.use(cors(
     {
-        origin : ["https://container-management-website.vercel.app"],
-        methods:["POST","GET"],
-        credentials:true   
+        origin : ["http://localhost:4500","https://container-management-website.onrender.com"], 
     }
 ))
 app.use(express.json());
@@ -30,4 +28,4 @@ app.use('/Notification',NotificationApi)
 app.use('/payment',PaymentApi)
 
 
-app.listen(1200, () => console.log('EXPRESS Server Started at Port No: 1200'));
+app.listen(4500, () => console.log('EXPRESS Server Started at Port No: 4500'));
