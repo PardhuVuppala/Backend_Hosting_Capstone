@@ -5,7 +5,7 @@ const OwnerModel = require('../modals/cantainer_owner_shema');
 const randomize = require('randomatic');
 const jwtgenerator = require("../JwtToken/jwtgenerator");
 const Authorize = require("../middleware/authorization");
-const mailservice = require("../services/registrationservices");
+const mailservice = require("../registrationServices");
 router.post('/register', async(req,res)=>
 {
     try{
