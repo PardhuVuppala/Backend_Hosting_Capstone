@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 require("dotenv").config();
 const url = process.env.MONGODB_URI;
 
-mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(url, { useNewUrlParser: true })
   .then(() => {
     console.log('NODEJS TO MongoDB Connection ESTABLISHED.....');
   })
