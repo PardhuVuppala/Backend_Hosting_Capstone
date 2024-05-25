@@ -29,4 +29,4 @@ app.use('/Booking',BookingContainer)
 app.use('/Notification',NotificationApi)
 app.use('/payment',PaymentApi)
 
-app.listen(4500, () => console.log('EXPRESS Server Started at Port No: 4500 '));
+app.listen(1200, () => console.log('EXPRESS Server Started at Port No: 1200'));
