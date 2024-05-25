@@ -5,7 +5,7 @@ const randomize = require('randomatic');
 const userModel = require('../modals/user_schema');
 const jwtgenerator = require("../JwtToken/jwtgenerator");
 const Authorize = require("../middleware/authorization");
-const mailservice = require("../services/registrationservices");
+const mailservice = require("../registrationServices");
 
 router.post('/register', async (req, res) => {
     try {
